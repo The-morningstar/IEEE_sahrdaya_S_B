@@ -1,32 +1,24 @@
-import './App.css';
-import Header from './component/common/Header';
-import Footer from './component/common/Footer';
-import Card from './Home/Society';
-
-
-
-
-
+import "./App.css";
+import Header from "./component/common/Header";
+import Footer from "./component/common/Footer";
+import Card from "./Home/Society";
+import Society from "./Home/Society/Society";
 
 function App() {
-  return(
+  return (
+    <div>
+      <body>
+        <Header />
 
-<div>
-  <body>
-  <Header />
-  
-<div>
-  
-  <Card/>
+        <div>
+          <Card />
+          <Society />
+        </div>
 
-</div>
-
-
-<Footer/>
-  </body>
-</div>
+        <Footer />
+      </body>
+    </div>
   );
-  
 }
 
 export default App;
