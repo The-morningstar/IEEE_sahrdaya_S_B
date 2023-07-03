@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer font-semibold">
       <div className="container">
         <div className="footer-columns">
           <div className="footer-column">
@@ -23,7 +23,6 @@ const Footer = () => {
             </p>
             <ul className="social-icons">
               <li>
-                <br />
                 <a href="#">
                   <FontAwesomeIcon icon={faFacebook} />
                 </a>

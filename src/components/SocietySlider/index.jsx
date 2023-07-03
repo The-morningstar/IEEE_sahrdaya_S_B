@@ -41,7 +41,7 @@ function SocietySlider() {
   };
   return (
     <div className="societyContainer">
-      <h2 className="text-center font-weight-bold">Our Socities</h2>
+      <h2 className="text-center text-3xl font-bold">Our Socities</h2>
       <section className="customer-logos slider">
         <Slider {...settings}>
           <div className="slide">

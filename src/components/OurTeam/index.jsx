@@ -68,7 +68,7 @@ const OurTeam = () => {
     },
     {
       cover: <img src={safaimg} alt="Product 1" />, // Replace with the image URL for Product 1
-      title: "Safa abdul salam",
+      title: "Safa Abdul Salam",
       decs: (
         <>
           SB Chairperson
@@ -80,13 +80,13 @@ const OurTeam = () => {
 
   return (
     <section className="wrapper background">
-      <h2 className="text-center font-weight-bold">Our Team</h2>
+      <h2 className="text-center text-3xl font-bold">Our Team</h2>
       <div className="container grid4">
         {data.map((val, index) => {
           return (
             <div className="product" key={index}>
               <div className="img icon-circle">{val.cover}</div>
-              <h3>{val.title}</h3>
+              <h3 className="font-bold">{val.title}</h3>
               <p>{val.decs}</p>
             </div>
           );

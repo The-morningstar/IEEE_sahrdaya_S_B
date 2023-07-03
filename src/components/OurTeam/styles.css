@@ -9,7 +9,7 @@
 .container.grid4 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
 }
 
@@ -19,8 +19,8 @@ h2 {
 }
 
 .product {
-  flex: 0 0 calc(30% - 20px);
-  max-width: calc(30% - 20px);
+  flex: 0 0 calc(30% + 20px);
+  max-width: calc(30% + 20px);
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
