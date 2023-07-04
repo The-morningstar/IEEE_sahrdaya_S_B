@@ -1,14 +1,13 @@
 import React from "react";
-import "./custom-wrapper.css";
+import "./styles.css";
+import sundarimg from "./images/sundar.jpeg";
+import maniimg from "./images/mani.jpeg";
+import satheeshimg from "./images/satheesh.jpeg";
+import antonyimg from "./images/antony.jpeg";
+import ansonimg from "./images/anson.jpeg";
+import safaimg from "./images/safa.jpg";
 
-import sundarimg from './images/sundar.jpeg';
-import maniimg from './images/mani.jpeg';
-import satheeshimg from './images/satheesh.jpeg';
-import antonyimg from './images/antony.jpeg';
-import ansonimg from './images/anson.jpeg';
-import safaimg from './images/safa.jpg';
-
-const Wrapper = () => {
+const OurTeam = () => {
   const data = [
     {
       cover: <img src={sundarimg} alt="Product 1" />, // Replace with the image URL for Product 1
@@ -16,18 +15,21 @@ const Wrapper = () => {
       decs: (
         <>
           Branch councellor
-          <br />Dept.Computer Science & Engg.
-          
+          <br />
+          Dept.Computer Science & Engg.
         </>
       ),
     },
     {
       cover: <img src={satheeshimg} alt="Product 2" />, // Replace with the image URL for Product 2
       title: "Dr. Satheesh kumar",
-      decs:  (
+      decs: (
         <>
-          Senior IEEE Member<br />
-          Advisor - computer society<br />Dept.Computer Science & Engg.
+          Senior IEEE Member
+          <br />
+          Advisor - computer society
+          <br />
+          Dept.Computer Science & Engg.
         </>
       ),
     },
@@ -36,9 +38,11 @@ const Wrapper = () => {
       title: "Dr. Manishankar A",
       decs: (
         <>
-          Professional IEEE Member<br />
-          Advisor<br />Dept.Computer Science & Engg.
-          
+          Professional IEEE Member
+          <br />
+          Advisor
+          <br />
+          Dept.Computer Science & Engg.
         </>
       ),
     },
@@ -47,8 +51,8 @@ const Wrapper = () => {
       title: "Antony Paul",
       decs: (
         <>
-          Mentor<br />
-          
+          Mentor
+          <br />
         </>
       ),
     },
@@ -57,36 +61,32 @@ const Wrapper = () => {
       title: "Anson M J",
       decs: (
         <>
-        Mentor<br />
-          
+          Mentor
+          <br />
         </>
       ),
     },
     {
       cover: <img src={safaimg} alt="Product 1" />, // Replace with the image URL for Product 1
-      title: "Safa abdul salam",
+      title: "Safa Abdul Salam",
       decs: (
         <>
-          SB Chairperson<br />
-          
+          SB Chairperson
+          <br />
         </>
       ),
     },
-
-    
   ];
 
   return (
     <section className="wrapper background">
-      <h2 className="text-center font-weight-bold">Our Team</h2>
+      <h2 className="text-center text-3xl font-bold">Our Team</h2>
       <div className="container grid4">
         {data.map((val, index) => {
           return (
             <div className="product" key={index}>
-              <div className="img icon-circle">
-                {val.cover}
-              </div>
-              <h3>{val.title}</h3>
+              <div className="img icon-circle">{val.cover}</div>
+              <h3 className="font-bold">{val.title}</h3>
               <p>{val.decs}</p>
             </div>
           );
@@ -96,4 +96,4 @@ const Wrapper = () => {
   );
 };
 
-export default Wrapper;
+export default OurTeam;
