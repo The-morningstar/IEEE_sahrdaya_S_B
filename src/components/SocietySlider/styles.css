@@ -1,37 +1,53 @@
+/* Container for the society section */
 .societyContainer {
-  padding-top: 50px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-  /* Add the box shadow properties */
+  position: relative;
+  padding-top: 20px;
   background-color: #fff;
-  margin: 10rem 0;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 15000px;
+  width: 100%;
+
+  /* Box shadow on the left and right sides */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+
+  /* Adjust padding/margin below the slick track */
+  margin-bottom: auto;
 }
 
+/* Heading styles */
 h2 {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
+/* Styling for slides in the slider */
 .slick-slide {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
+/* Set images inside the slider to 100% width */
 .slick-slide img {
   width: 100%;
+  height: auto; /* Ensures the images maintain aspect ratio and are responsive */
 }
 
+/* Styles for the slick slider */
 .slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
 }
 
+/* Styles for the slick slider's list container */
 .slick-list {
   position: relative;
   display: block;
   overflow: hidden;
-  height: 300px;
+  height: 280px; /* Adjust the height as needed for different devices */
 }
 
+/* Styles for the slick slider's track */
 .slick-track {
   position: relative;
   top: 0;
@@ -39,21 +55,37 @@ h2 {
   display: block;
 }
 
+/* Styles for individual slick slides */
 .slick-slide {
   display: none;
   float: left;
-  height: 60%;
+  height: 5%;
   min-height: 1px;
 }
 
+/* Display images inside slick slides as block elements */
 .slick-slide img {
   display: block;
 }
 
+/* Make sure the slides are displayed when slick is initialized */
 .slick-initialized .slick-slide {
   display: block;
 }
 
+/* Additional styles for any other element with the class 'copy' */
 .copy {
   padding-top: 50px;
+}
+
+/* Make the container responsive to smaller displays */
+@media screen and (max-width: 768px) {
+  .societyContainer {
+    width: 90%;
+  }
+
+  /* Adjust the height of the slick list for smaller devices */
+  .slick-list {
+    height: 200px;
+  }
 }

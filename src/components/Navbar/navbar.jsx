@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import "./styles.css"; // Import CSS file for styling
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+import "./navbar.css"; 
+
+
+const Navbar = () => {
   const [Toggled, setToggled] = useState(false);
+
   return (
     <header className="header flex md:flex-row flex-col justify-between">
       <div className="flex justify-between w-full">
@@ -21,7 +25,7 @@ const Header = () => {
       </div>
       <nav
         className={`menu ${
-          Toggled ? "flex" : "hidden"
+          Toggled ? "visible" : ""
         } md:flex flex-col md:flex-row justify-center text-center md:py-2 py-10`}
       >
         <ul className="flex flex-col md:flex-row font-medium gap-10">
@@ -43,4 +47,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
