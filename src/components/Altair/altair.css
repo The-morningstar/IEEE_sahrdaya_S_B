@@ -1,0 +1,90 @@
+/* Import the GIF as a background image */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit:ital@1&family=Lora:ital@1&family=REM:ital,wght@1,600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+.hero-container {
+    position: relative;
+    min-height: 60vh;
+    background-image: url('./altair.gif');
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gifAnimation 2s infinite; /* Adjust the duration here for slower layback */
+  }
+  
+  /* Glassmorphism card-like UI */
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:  20px 120px; /* Adjust padding to make the card bigger */
+    border-radius: 20px; /* Adjust border-radius to make the card bigger and rounder */
+    backdrop-filter: blur(20px); /* Adjust blur for a more pronounced glassmorphism effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjust box shadow to give depth */
+    text-align: center;
+  }
+  
+  /* Styles for h1, h2, and button */
+  .hero-title {
+    font-family: 'REM', sans-serif;;
+    font-size: 4rem; /* Increase font size for bigger text */
+    color: #fff;
+    margin-bottom: 20px; /* Increase margin to add more spacing */
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    line-height: 1;
+  }
+  
+  .hero-subtitle {
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 6px;
+    font-size: 2rem; /* Increase font size for bigger text */
+    color: #fff;
+    margin-bottom: 30px; /* Increase margin to add more spacing */
+    line-height: 0;
+  }
+  
+  .hero-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        color: #fff;
+    padding: 10px 32px; /* Adjust padding for a larger button */
+    font-size: 1.2rem; /* Increase font size for bigger text */
+    border: none;
+    border-radius: 10px; /* Adjust border-radius for a rounder button */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+    background-color: #c4c4c4cd;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero-container {
+      min-height: 100vh; /* Adjust minimum height for smaller screens */
+    }
+  
+    .hero-content {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .hero-title {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .hero-button {
+      padding: 12px 24px; /* Adjust padding for smaller screens */
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

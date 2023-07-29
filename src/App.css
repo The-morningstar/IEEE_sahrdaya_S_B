@@ -1,7 +1,4 @@
-:root{
-    background-image: #142d4c;
-    
-}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

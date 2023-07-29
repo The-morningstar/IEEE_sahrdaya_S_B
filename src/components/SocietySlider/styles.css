@@ -9,8 +9,7 @@
   width: 100%;
 
   /* Box shadow on the left and right sides */
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* Adjust padding/margin below the slick track */
   margin-bottom: auto;
 }
@@ -19,6 +18,7 @@
 h2 {
   text-align: center;
   padding: 30px;
+  width:100%
 }
 
 /* Styling for slides in the slider */

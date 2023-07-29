@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll'; // Import Link from 'react-scroll' for smooth scrolling
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import "./navbar.css"; 
-
+import './navbar.css';
 
 const Navbar = () => {
-  const [Toggled, setToggled] = useState(false);
+  const [toggled, setToggled] = useState(false);
 
   return (
     <header className="header flex md:flex-row flex-col justify-between">
       <div className="flex justify-between w-full">
         <div className="logo">
-          <a href="/">IEEE Sahrdaya </a>
-        </div>
+          {/* Use Link instead of anchor (a) tags */}
+          <Link to="home" smooth={true} duration={500}>
+            IEEE Sahrdaya
+          </Link>
+            </div>
         <FontAwesomeIcon
           className="text-lg border-gray-600 text-gray-800 border-2 p-2 rounded-md cursor-pointer md:hidden"
           icon={faBars}
@@ -24,23 +27,30 @@ const Navbar = () => {
         />
       </div>
       <nav
-        className={`menu ${
-          Toggled ? "visible" : ""
-        } md:flex flex-col md:flex-row justify-center text-center md:py-2 py-10`}
+        className={`menu ${toggled ? 'visible' : ''} md:flex flex-col md:flex-row justify-center text-center md:py-2 py-10`}
       >
         <ul className="flex flex-col md:flex-row font-medium gap-10">
-          <li>
-            <a href="#">Home</a>
+        <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
           </li>
           <li>
-            <a href="#">Societies</a>
+            <Link to="societies" smooth={true} duration={500}>
+              Societies
+            </Link>
           </li>
           <li>
-            <a href="#">Events</a>
+            <Link to="events" smooth={true} duration={500}>
+              Events
+            </Link>
           </li>
+
         </ul>
       </nav>
     </header>

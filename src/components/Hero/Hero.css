@@ -1,0 +1,29 @@
+.element {
+  background: #ffff; /* Background color without single quotes */
+  z-index: 99;
+}
+.ieee {
+  background: url('./ieee.png'); /* Adjust the path if the image is in a different directory */
+  width: 150px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(8px 10px 5px rgb(0, 0, 0));
+}
+.shrdya{
+  background: url('./slogo.png'); /* Adjust the path if the image is in a different directory */
+  width: 150px;
+  height: 96px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(8px 10px 5px rgb(0, 0, 0));
+
+}
+
+
+
+.himg {
+  background: url('./shrd.png');
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
