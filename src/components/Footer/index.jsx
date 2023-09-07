@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css"; 
-import Wrapper from '../../components/Wrapper/Wrapper';
+import Wrapper from "../Wrapper/wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -8,6 +8,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
   return (
