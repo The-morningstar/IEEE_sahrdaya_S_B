@@ -2,16 +2,16 @@ import React from 'react';
 
 const Feature = () => {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+    <div className="max-w-[100rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto" style={{ backgroundColor: "#ffffff6d" ,paddingBottom:"90px"}}>
   
 
       <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 ">
           <h2 className="font-bold text-2xl md:text-3xl text-gray-800">
-            We tackle the challenges start-ups face
+          Fostering Innovation:<br/> Our Distinctive Features
           </h2>
           <p className="mt-2 md:mt-4 text-gray-500">
-            Besides working with start-up enterprises as a partner for digitalization, we have built enterprise products for common pain points that we have encountered in various products and projects.
+          Discover the hallmark of IEEE Sahrdaya's excellence through our distinctive features. From cutting-edge workshops to insightful seminars, our community empowers growth, learning, and collaboration.
           </p>
         </div>
 
@@ -24,10 +24,10 @@ const Feature = () => {
               </svg>
               <div className="grow">
                 <h3 className="text-lg font-semibold text-gray-800">
-                  Creative minds
+                Technical Expertise
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  We choose our teams carefully. Our people are the secret to great work.
+                Benefit from access to the latest advancements in technology and industry trends. IEEE provides a platform to enhance your technical skills through workshops, conferences, and resources that keep you at the forefront of innovation.
                 </p>
               </div>
             </div>
@@ -38,10 +38,10 @@ const Feature = () => {
               </svg>
               <div className="grow">
                 <h3 className="text-lg font-semibold text-gray-800">
-                  Simple and affordable
+                Leadership Development
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  From boarding passes to movie tickets, there's pretty much nothing you can't store with Preline.
+                IEEE fosters leadership qualities by offering opportunities to take on roles within student branches, organizing events, and engaging in projects. Build valuable leadership skills that extend beyond technology and into effective management.
                 </p>
               </div>
             </div>
@@ -53,10 +53,10 @@ const Feature = () => {
               </svg>
               <div className="grow">
                 <h3 className="text-lg font-semibold text-gray-800">
-                  Industry-leading documentation
+                Career Opportunities
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Our documentation and extensive Client libraries contain everything a business needs to build a custom integration.
+                Gain a competitive edge in your career journey through IEEE's diverse offerings. From job fairs and networking events to resume-building workshops, IEEE equips you with the tools needed to excel in the professional world.
                 </p>
               </div>
             </div>
@@ -67,10 +67,10 @@ const Feature = () => {
               </svg>
               <div className="grow">
                 <h3 className="text-lg font-semibold text-gray-800">
-                  Designing for people
+                Global Network
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  We actively pursue the right balance between functionality and aesthetics, creating delightful experiences.
+                IEEE offers an expansive network of professionals, scholars, and innovators spanning across the globe. Connect with like-minded individuals and tap into a world of knowledge sharing and collaboration.
                 </p>
               </div>
             </div>

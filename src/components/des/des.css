@@ -1,0 +1,23 @@
+/* Your existing styles */
+
+.des {
+    position: relative; /* Make the parent element relative for positioning */
+    background-image: url('../../../public/s.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    /* Your other styles for the .des element */
+  }
+  
+  .des::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position the pseudo-element absolutely within the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Inherit the background image from the parent */
+    filter: blur(10px); /* Apply a blur effect to the pseudo-element */
+    z-index: -1; /* Place the pseudo-element behind the content */
+  }
+  

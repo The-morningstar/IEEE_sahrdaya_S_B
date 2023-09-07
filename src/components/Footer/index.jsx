@@ -1,5 +1,6 @@
 import React from "react";
-import "./styles.css"; // Import CSS file for styling
+import "./styles.css"; 
+import Wrapper from '../../components/Wrapper/Wrapper';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -10,7 +11,9 @@ import {
 
 const Footer = () => {
   return (
+   
     <footer className="footer font-semibold">
+       <Wrapper/>
       <div className="container">
         <div className="footer-columns">
           <div className="footer-column">
@@ -49,7 +52,7 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <span>
               <a href="tel:+9100000000">
-                <h5>Dr.Yuvaraj veluswami</h5>
+                <h5>Dr. R Sunder</h5>
               </a>
             </span>
             <span>
@@ -67,7 +70,7 @@ const Footer = () => {
         </div>
         <div className="content">
           <p>&copy; 2023 IEEE Sahrdaya SB. All rights reserved.</p>
-          <p>Developed with &nbsp;❤️ &nbsp; &nbsp; Webmaster 2023</p>
+          <p>Developed with &nbsp;❤️ &nbsp; &nbsp;Nimble Nixan  -   Webmaster 2023</p>
         </div>
       </div>
     </footer>

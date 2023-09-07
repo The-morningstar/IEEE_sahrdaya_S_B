@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import Slider from "react-slick";
 import csLogo from "./images/cs.png";
 import cssLogo from "./images/css.png";
 import edsocLogo from "./images/edsoc.png";
@@ -13,7 +14,23 @@ import sightLogo from "./images/sight.png";
 import spsLogo from "./images/sps.png";
 import ssitLogo from "./images/ssit.png";
 import wieLogo from "./images/wie.png";
-import Slider from "react-slick";
+
+// Array containing the imported image variables
+const societyLogos = [
+  csLogo,
+  cssLogo,
+  edsocLogo,
+  embsLogo,
+  iasLogo,
+  iesLogo,
+  npssLogo,
+  pesLogo,
+  psLogo,
+  sightLogo,
+  spsLogo,
+  ssitLogo,
+  wieLogo
+];
 
 function SocietySlider() {
   const settings = {
@@ -39,51 +56,19 @@ function SocietySlider() {
       },
     ],
   };
+
+  // Generate JSX elements for the slider dynamically
+  const sliderItems = societyLogos.map((logo, index) => (
+    <div className="slide" key={index}>
+      <img src={logo} alt="logo" />
+    </div>
+  ));
+
   return (
     <div className="societyContainer">
-      <h2 className="text-center text-3xl font-bold">Our Socities</h2>
+      <h2 className="text-center text-3xl font-bold">Our Societies</h2>
       <section className="customer-logos slider">
-        <Slider {...settings}>
-          <div className="slide">
-            <img src={csLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={cssLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={edsocLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={embsLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={iasLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={iesLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={npssLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={pesLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={psLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={sightLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={spsLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={ssitLogo} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={wieLogo} alt="logo" />
-          </div>
-        </Slider>
+        <Slider {...settings}>{sliderItems}</Slider>
       </section>
     </div>
   );

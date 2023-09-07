@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Neoneon';
+  src: url('../../../public/Neoneon-3zaD6.woff') format('woff2'), 
+       url('../../../public/Neoneon-3zaD6.woff') format('woff'); 
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.altheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 20px;
+  display: flex; /* Align items in the center vertically */
+  justify-content: space-between; /* Space between logo and menu icon */
+  background-color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.altheader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: 1s;
+}
+
+.altheader:hover::before {
+  left: 100%;
+}
+
+.altlogo {
+  font-family: 'Neoneon', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.altlogo a {
+  text-decoration: none;
+  color: #ff0000;
+  font-family: 'Kanit', sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.menu li {
+  margin-left: 40px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Add media query for smaller devices */
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.visible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .menu.visible ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

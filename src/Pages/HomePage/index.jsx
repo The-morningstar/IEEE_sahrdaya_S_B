@@ -1,51 +1,46 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar/navbar';
-import Event from '../../components/Events/event';
 import TeamSection from '../../components/OurTeam/team';
 import SocietySlider from '../../components/SocietySlider';
-import IconBlocks from '../../components/Iconblock';
-import Feature from '../../components/features/feature';
 import Stats from '../../components/stats/stats';
-import Wrapper from '../../components/Wrapper/wrapper';
-
-import Altair from '../../components/Altair/Altair';
+import Des from '../../components/des/des';
 import Hero from '../../components/Hero/Hero';
+import Gallery from '../../components/Gallary/gallary';
+import Altair from '../../components/Altair/Altair';
+
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
+      <section id="home">
       <Hero/>
-      <Feature/>
-      <Altair/>
-
-      <Stats/>
-      <IconBlocks/>
-      {/* Section with ID "home" */}
-      <section id="events">
-        <Event />
       </section>
+     
+      <section id="about">
+      <Des/>
+      <Stats/>
+      </section>
+     
+      
+      < Gallery/>
 
-  {/* Section with ID "societies" */}
-  <section id="societies">
+  
+      <section id="societies">
         <SocietySlider />
       </section>
       
-      
-      {/* Section with ID "about" */}
-      <section id="about">
-        <TeamSection />
+
+      <section id="altair">
+      <Altair/>
       </section>
-
-  
-
-      {/* Other sections and components */}
-      {/* ... */}
-     
       
-    
-      <Footer/>
+      
+      
+        <TeamSection />
+        
+        <Footer/>
       
     </>
   );

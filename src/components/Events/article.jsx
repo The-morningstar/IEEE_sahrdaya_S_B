@@ -1,15 +1,18 @@
 import React from 'react';
+
 import styled from 'styled-components';
+import i1 from './images/kcd.png';
 
 const ArticleContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  gap: 10px;
+  
   @media (min-width: 1024px) {
-    gap: 12px;
+    gap: 20px;
   }
   @media (min-width: 1280px) {
-    gap: 24px;
+    gap:50px;
   }
 `;
 
@@ -84,71 +87,64 @@ const Article = () => {
       {/* Article 1 */}
       <ArticleCard>
         <ArticleImage>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp" alt="Article 1" />
+          <img src={i1}alt="Article 1" />
           <ImageOverlay className="overlay" />
         </ArticleImage>
         <ArticleContent>
-          <h5>My paradise</h5>
+          <h5>Keras Community Day</h5>
           <p>
             <small>
-              Published <u>13.01.2022</u> by <a href="">Anna Maria Doe</a>
-            </small>
+              Hosted on  <u>19.07.2023</u> by </small><h3>EDSOC</h3>
+            
           </p>
           <p>
             Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam
             dignissim elementum. Donec a ullamcorper diam.
           </p>
-          <a href="#" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            Read more
-          </a>
+          
         </ArticleContent>
       </ArticleCard>
 
       {/* Article 2 */}
       <ArticleCard>
         <ArticleImage>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp" alt="Article 2" />
+          <img src={i1}alt="Article 1" />
           <ImageOverlay className="overlay" />
         </ArticleImage>
         <ArticleContent>
-          <h5>Travel to Italy</h5>
+          <h5>Keras Community Day</h5>
           <p>
             <small>
-              Published <u>12.01.2022</u> by <a href="">Halley Frank</a>
-            </small>
+              Hosted on  <u>19.07.2023</u> by </small><h3>EDSOC</h3>
+            
           </p>
           <p>
-            Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam orci, nec ornare metus semper sed. Integer
-            volutpat ornare erat sit amet rutrum.
+            Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam
+            dignissim elementum. Donec a ullamcorper diam.
           </p>
-          <a href="#" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            Read more
-          </a>
+          
+        </ArticleContent>
+      </ArticleCard>
+      <ArticleCard>
+        <ArticleImage>
+          <img src={i1}alt="Article 1" />
+          <ImageOverlay className="overlay" />
+        </ArticleImage>
+        <ArticleContent>
+          <h5>Keras Community Day</h5>
+          <p>
+            <small>
+              Hosted on  <u>19.07.2023</u> by </small><h3>EDSOC</h3>
+            
+          </p>
+          <p>
+            Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam
+            dignissim elementum. Donec a ullamcorper diam.
+          </p>
+          
         </ArticleContent>
       </ArticleCard>
 
-      {/* Article 3 */}
-      <ArticleCard>
-        <ArticleImage>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/081.webp" alt="Article 3" />
-          <ImageOverlay className="overlay" />
-        </ArticleImage>
-        <ArticleContent>
-          <h5>Chasing the sun</h5>
-          <p>
-            <small>
-              Published <u>10.01.2022</u> by <a href="">Joe Svan</a>
-            </small>
-          </p>
-          <p>
-            Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris
-            ut risus eget massa volutpat feugiat. Donec.
-          </p>
-          <a href="#" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            Read more
-          </a>
-        </ArticleContent>
-      </ArticleCard>
     </ArticleContainer>
   );
 };

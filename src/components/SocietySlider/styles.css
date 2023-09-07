@@ -21,15 +21,14 @@ h2 {
   width:100%
 }
 
-/* Styling for slides in the slider */
+
 .slick-slide {
   margin: 0 30px;
 }
 
-/* Set images inside the slider to 100% width */
 .slick-slide img {
   width: 100%;
-  height: auto; /* Ensures the images maintain aspect ratio and are responsive */
+  height: auto; 
 }
 
 /* Styles for the slick slider */
