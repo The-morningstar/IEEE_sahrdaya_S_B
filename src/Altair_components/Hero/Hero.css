@@ -1,0 +1,10 @@
+
+.altbanner {
+  position: relative;
+  background: url('./banner.png');
+  background-size: cover; /* This line makes the background image fit within the container */
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+}
+
+

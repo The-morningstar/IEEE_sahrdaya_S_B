@@ -11,11 +11,11 @@ import img6 from "./img/IMG_7352.JPG";
 
 // Add more image imports as needed
 function Gallery() {
-    // Create an array of image URLs
+    // array of image URLs
     const imgUrls = [img1, img2, img3,img4,img5,img6,img1, img2, img3,img4,img5,img6];
 
     const sectionStyle = {
-        background: `url(${bg})`, // Relative to the public directory
+        background: `url(${bg})`, 
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         padding: "40px 0",
@@ -24,7 +24,7 @@ function Gallery() {
     
       const backgroundStyle = {
         content: '""',
-        background: 'url("/s.jpg")', // Relative to the public directory
+        background: 'url("/s.jpg")',//Public library
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         padding: "20px 0",
@@ -33,7 +33,7 @@ function Gallery() {
         left: "0",
         width: "100%",
         height: "100%",
-        transform: "scaleX(-1) rotate(180deg)", // Flip horizontally and rotate
+        transform: "scaleX(-1) rotate(180deg)", 
       };
     
       const rotationStyle = {

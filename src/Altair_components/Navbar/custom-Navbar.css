@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'Neoneon';
-  src: url('../../../public/Neoneon-3zaD6.woff') format('woff2'), 
-       url('../../../public/Neoneon-3zaD6.woff') format('woff'); 
-  font-weight: 1000;
-  font-style: normal;
-}
+
 
 .altheader {
   position: fixed;
@@ -35,16 +29,20 @@
 }
 
 .altlogo {
-  font-family: 'Neoneon', sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  /* Your container styles */
+  display: flex; /* Example: Display as a flex container */
+  align-items: center; /* Center content vertically */
 }
 
-.altlogo a {
-  text-decoration: none;
-  color: #ff0000;
-  font-family: 'Kanit', sans-serif;
+.altlogo img {
+  /* Style for the logo image */
+  max-width: 5vh; /* Ensure the logo image fits its container */
+  height: auto; /* Maintain the aspect ratio */
+  filter: drop-shadow(10px 10px 8px);
 }
+
+
+
 
 .menu {
   display: flex;

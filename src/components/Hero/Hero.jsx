@@ -4,7 +4,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section>
-      <div className="himg">
+      <div className="himg">{/*bg image */}
         <div className="gradient-overlay"></div> {/* Gradient overlay div */}
         
         <div className="relative mx-auto max-w-screen-xl px-5 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -16,11 +16,7 @@ const Hero = () => {
             <h1 className="hea">
               IEEE Sahrdaya SB
             </h1>
-
-
-            
-            
-          </div>
+            </div>
         </div>
       </div>
     </section>

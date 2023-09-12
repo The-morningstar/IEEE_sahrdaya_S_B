@@ -1,9 +1,4 @@
-/* Import the fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Noto+Serif:ital,wght@1,500&family=Roboto+Condensed:wght@300&family=Ultra&display=swap');
-
-/* Your existing styles */
-
 .himg {
   position: relative;
   background: url('./shrd.png');
@@ -14,7 +9,7 @@
 .gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0)30%, rgb(255, 255, 255)99%);
+  background: linear-gradient(rgba(0, 0, 0, 0)50%, rgb(255, 255, 255)99%);
   z-index: 0;
 }
 
@@ -22,10 +17,12 @@
   position: relative;
   top: -20px;
   font-size: 13vh;
-  color:#191D88;
-  text-shadow: 0 4px 5px rgb(76, 76, 76);
+  color:#220091;
+  text-shadow: 10px 4px 5px rgba(243, 243, 243, 0.599);
   font-family: 'Bebas Neue', sans-serif;
-  transition: all 0.3s ease-in-out; /* Apply transition to all properties */
+  letter-spacing: 3px;
+  font-weight: 550;
+  transition: all 0.3s ease-in-out;
 }
 
 .engg {
@@ -35,7 +32,7 @@
   font-size: 3vh;
   color: rgb(0, 0, 0);
   font-family: 'Noto Serif', serif;
-  transition: all 0.3s ease-in-out; /* Apply transition to all properties */
+  transition: all 0.3s ease-in-out; 
 }
 
 

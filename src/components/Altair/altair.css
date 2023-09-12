@@ -1,65 +1,59 @@
-@font-face {
-  font-family: 'Neoneon';
-  src: url('../../../public/Neoneon-3zaD6.woff') format('woff2'), 
-       url('../../../public/Neoneon-3zaD6.woff') format('woff'); 
- 
-  font-weight:1000;
-  font-style: normal;
-}
+
 .altair-section {
   position: relative;
+  width: 100%; 
+  height: auto; 
+}
+
+.rotated-image {
   width: 100%;
   height: auto;
-  z-index: -1;
+  background-size: contain;
 }
 
-
-
-.altcont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
-}
-
-.althead {
-  font-family: 'Neoneon', sans-serif;
-  color: white;
-  font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0 0 10px rgba(255, 0, 0, 0.85);
-  letter-spacing: 20px;
-}
-
-.subtext {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 15px;
-}
 
 .explore-more-button {
   position: absolute;
   color: rgb(255, 255, 255);
-  top: 80%; /* Adjust the vertical position as needed */
+  top: 90%; 
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  background-color: #c8c8c8;
-  padding: 10px 20px;
-  font-size: 1rem;
+  transform: translate(-50%, -50%); 
+  z-index: 10;
+  background-color: transparent;
+  padding: 1%; 
+  font-size: 2vw; 
   font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: rgba(249, 213, 213, 0.758) 0px 5px 15px;
+  box-shadow: rgba(249, 213, 213, 0.758) 0px 2% 6%; 
 }
 
-.explore-more-button:hover {
-  background-color: #00c3ff;
+
+@media (max-width: 768px) {
+  .explore-more-button {
+    font-size: 3vw; 
+    padding: 3% 3%; 
+    top: 90%; 
+  }
 }
+
+
+.explore-more-button:after  {
+   content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  
+  .explore-more-button:hover::after {
+    transform: scaleX(1);
+  }

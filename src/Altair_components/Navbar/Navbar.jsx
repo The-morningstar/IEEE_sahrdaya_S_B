@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll'; // Import Link from 'react-scroll' for smooth scrolling
-
+import logoImage from './logo.png'
 
 import './custom-Navbar.css';
 
 const Navbar = () => {
+  
   const [toggled, setToggled] = useState(false);
+
+  
 
   return (
     <header className="altheader flex md:flex-row flex-col justify-between">
       <div className="flex justify-between w-full">
         <div className="altlogo">
-          {/* Use Link instead of anchor (a) tags */}
           <Link to="althome" smooth={true} duration={500}>
-            ALTAIR
+            <img src={logoImage} alt="Altair Logo" />
           </Link>
         </div>
         <FontAwesomeIcon
@@ -35,7 +38,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-         
+          
         </ul>
       </nav>
     </header>

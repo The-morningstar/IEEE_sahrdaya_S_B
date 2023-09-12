@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-scroll'; // Import Link from 'react-scroll' for smooth scrolling
+import { Link } from 'react-scroll'; 
 
 
 import './navbar.css';
@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="header flex md:flex-row flex-col justify-between">
       <div className="flex justify-between w-full">
         <div className="logo"><button>
-          {/* Use Link instead of anchor (a) tags */}
+          
           <Link to="home" smooth={true} duration={500}>
             IEEE Sahrdaya
           </Link></button>

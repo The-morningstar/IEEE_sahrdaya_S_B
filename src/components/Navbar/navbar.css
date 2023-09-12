@@ -1,13 +1,11 @@
-/* Theme */
-
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit:ital@1&family=Lora:ital@1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit:ital@1&family=Lora:ital@1&display=swap');
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
   padding: 10px 20px;
   align-items: center;
   background-color: #fff;
@@ -82,7 +80,6 @@
   transform: scaleX(1);
 }
 
-/* Add media query for smaller devices */
 @media (max-width: 767px) {
   .menu {
     display: none;
