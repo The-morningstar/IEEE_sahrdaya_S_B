@@ -12,9 +12,9 @@ const AltAboutSection = () => {
   };
 
   return (
-    <section className="altabout-section">
-      <div className="altabout-content">
-        <h2 className="altabout-heading">Now Or Never</h2>
+    <section className="altabout-section flex-col md:flex-row h-full ">
+      <div className="altabout-content ">
+        <h2 className="altabout-heading leading-tight md:leading-relaxed">Now Or Never</h2>
         <p>
         Get ready to soar with ALTAIR 2.0! 🚀 Early bird registration is now open, offering you an exclusive opportunity to secure your spot at this premier national technical conclave presented by IEEE SAHRDAYA SB. Don't miss out on the chance to dive into cutting-edge workshops, gain insights from industry experts, and network with like-minded peers. Grab your tickets at a discounted rate and be part of the future of technology at ALTAIR 2.0!
         </p>
@@ -22,7 +22,7 @@ const AltAboutSection = () => {
           Grab your tickets now <span>&rarr;</span>
         </button>
       </div>
-      <div className="altabout-decor">
+      <div className="altabout-decor mt-20 md:mt-0">
         <img src={img} alt="Decor Image" className="altdecor-image" />
       </div>
     </section>

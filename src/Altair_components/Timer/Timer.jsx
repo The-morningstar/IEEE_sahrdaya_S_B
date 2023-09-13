@@ -50,10 +50,10 @@ class CountdownTimer extends Component {
     const { days, hours, minutes, seconds } = this.state;
 
     return (
-        <div className="countdown-container">
-      <div className="countdown-timer">
+        <div className="countdown-container h-full md:h-screen py-10">
+      <div className="countdown-timer flex-col md:flex-row h-full">
         
-        <div className="timer-item">
+        <div className="timer-item ">
           <span>{days}</span>
           <span>Days</span>
         </div>
