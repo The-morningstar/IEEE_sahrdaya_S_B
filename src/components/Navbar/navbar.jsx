@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex justify-between w-full">
         <div className="logo"><button>
           
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="/" smooth={true} duration={500}>
             IEEE Sahrdaya
           </Link></button>
         </div>

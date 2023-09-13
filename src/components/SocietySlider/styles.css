@@ -80,7 +80,7 @@ h2 {
 /* Make the container responsive to smaller displays */
 @media screen and (max-width: 768px) {
   .societyContainer {
-    width: 90%;
+    width: 100%;
   }
 
   /* Adjust the height of the slick list for smaller devices */

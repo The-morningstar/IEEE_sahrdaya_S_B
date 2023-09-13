@@ -2,7 +2,7 @@ import React from 'react';
 
 const Feature = () => {
   return (
-    <div className="max-w-[100rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto" style={{ backgroundColor: "#ffffff6d" ,paddingBottom:"90px"}}>
+    <div className="max-w-[100rem] px-8 py-10 sm:px-6 lg:px-8 mx-auto" style={{ backgroundColor: "#ffffff6d" ,paddingBottom:"90px"}}>
   
 
       <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
