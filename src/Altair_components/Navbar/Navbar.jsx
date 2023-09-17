@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="altheader flex md:flex-row flex-col justify-between">
       <div className="flex justify-between w-full">
         <div className="altlogo">
-          <Link to="althome" smooth={true} duration={500}>
+          <Link to="/" smooth={true} duration={500}>
             <img src={logoImage} alt="Altair Logo" />
           </Link>
         </div>

@@ -32,7 +32,7 @@ const images = [
 const Wrapper = () => {
   return (
     <section className="p-6" style={{ background: "#ffff", color: "#E8FFC2" }}>
-      <div className="container mx-auto grid justify-center grid-cols-1 text-center lg:grid-cols-5">
+      <div className="container mx-auto grid justify-items-center grid-cols-1 text-center lg:grid-cols-5 ">
         {images.map((image, index) => (
           <div key={index} className="flex flex-col justify-start m-2 lg:m-6">
             <img

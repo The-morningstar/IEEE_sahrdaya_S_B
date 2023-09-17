@@ -10,7 +10,7 @@ function App() {
       {/* Define your routes within the Routes component */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/altair" element={<Altair />} /> {/* Define the Altair route */}
+        <Route path="/altair"  element={<Altair />} /> {/* Define the Altair route */}
       </Routes>
     </BrowserRouter>
   );

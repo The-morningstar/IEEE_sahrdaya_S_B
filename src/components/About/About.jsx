@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="about-section">
       <div className="about-content">
         <h2 className="about-heading">About Us</h2>
-        <p>
+        <p className='px-2 md:px-12'>
           IEEE Sahrdaya is a dynamic space where connections flourish and growth takes root. We offer 
           an inviting environment that encourages networking and the forging of meaningful professional 
           relationships. Our diverse range of events is meticulously designed to amplify both leadership and

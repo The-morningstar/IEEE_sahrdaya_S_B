@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css"; 
-import Wrapper from '../../components/Wrapper/Wrapper';
+import Wrapper from '../../components/Wrapper/wrapper';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -57,7 +57,7 @@ const Footer = () => {
             </span>
             <span>
               <a href="tel:+9100000000">
-                <h5>safa abdul salam</h5>
+                <h5>Safa Abdul Salam</h5>
               </a>
             </span>
             <span>
