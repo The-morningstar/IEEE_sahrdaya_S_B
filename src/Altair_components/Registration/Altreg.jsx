@@ -14,7 +14,7 @@ const Altreg = () => {
   return (
     <section className="altabout-section flex-col md:flex-row h-full ">
       <div className="altabout-content">
-        <h2 className="altabout-heading leading-tight md:leading-relaxed">Register Now </h2>
+        <h2 className="altabout-heading leading-tight md:leading-relaxed">Closed</h2>
         <p>
         Get ready for an incredible journey of knowledge and innovation! We're excited to announce that registration is now open for Altair 2.0, presented by IEEE SAHRDAYA SB. Altair 2.0 is a three-day national technical conclave that offers top-tier workshops, insights from industry experts, and a platform to enhance your skills in cutting-edge technologies such as AI and sustainable energy. Don't miss this opportunity to join us at Altair 2.0 and secure your spot for an immersive learning experience. Register today and take the first step toward a technology-driven future!
         </p>
