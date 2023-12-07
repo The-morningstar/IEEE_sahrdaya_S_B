@@ -19,7 +19,7 @@ const Altreg = () => {
         Get ready for an incredible journey of knowledge and innovation! We're excited to announce that registration is now open for Altair 2.0, presented by IEEE SAHRDAYA SB. Altair 2.0 is a three-day national technical conclave that offers top-tier workshops, insights from industry experts, and a platform to enhance your skills in cutting-edge technologies such as AI and sustainable energy. Don't miss this opportunity to join us at Altair 2.0 and secure your spot for an immersive learning experience. Register today and take the first step toward a technology-driven future!
         </p>
         <button className="altregister-button" onClick={handleRegisterNowClick}>
-          Grab your tickets now <span>&rarr;</span>
+          Closed !!! <span>&rarr;</span>
         </button>
       </div>
       <div className="altabout-decor mt-20 md:mt-0">
