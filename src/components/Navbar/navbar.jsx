@@ -47,7 +47,7 @@ const Navbar = () => {
             </Link></button>
           </li>
           <li><button>
-            <Link to="altair" smooth={true} duration={500}>
+            <Link to="altair" smooth={true} duration={500} >
               Altair
             </Link></button>
           </li>

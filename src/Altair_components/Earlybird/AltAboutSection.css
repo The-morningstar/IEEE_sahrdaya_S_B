@@ -22,7 +22,7 @@
 .altregister-button {
   position: relative;
   background-color: transparent;
-  color: #ffffff;
+  color: #a30000;
   padding: 10px 20px;
   font-size: 2rem;
   font-weight: 500;
@@ -35,8 +35,8 @@
 
 /* Apply the glow effect to text on hover */
 .altregister-button:hover {
-  color: #ffffff; /* Change text color on hover */
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Add text glow effect on hover */
+  color: #d60000; /* Change text color on hover */
+  text-shadow: 0px 0px 10px rgba(206, 0, 0, 0.8); /* Add text glow effect on hover */
   transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition for glow effect */
 }
 

@@ -19,7 +19,7 @@ const AltAboutSection = () => {
         Get ready to soar with ALTAIR 2.0! 🚀 Early bird registration is now open, offering you an exclusive opportunity to secure your spot at this premier national technical conclave presented by IEEE SAHRDAYA SB. Don't miss out on the chance to dive into cutting-edge workshops, gain insights from industry experts, and network with like-minded peers. Grab your tickets at a discounted rate and be part of the future of technology at ALTAIR 2.0!
         </p>
         <button className="altregister-button" onClick={handleRegisterNowClick}>
-          Grab your tickets now <span>&rarr;</span>
+          Closed !!!
         </button>
       </div>
       <div className="altabout-decor mt-20 md:mt-0">

@@ -20,7 +20,7 @@ const Altair = () => {
       <section id="althome">
         <AltHero />
       </section>
-      <CountdownTimer />
+      
       <AltAboutSection />
       <Altreg />
 

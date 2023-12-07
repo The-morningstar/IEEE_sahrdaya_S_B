@@ -5,7 +5,7 @@ import img from './image1.jpeg';
 const Altreg = () => {
   const handleRegisterNowClick = () => {
     // Replace 'your-ticket-link' with the actual URL for your tickets page
-    const ticketLink = 'https://www.yepdesk.com/buy-tickets/64fb38fa46e0fb000107e642/private/u0038gner9/category/1694186371';
+    const ticketLink = 'https://www.yepdesk.com/embed/buy-tickets/64fb38fa46e0fb000107e642/private/u0038gner9';
     
     // Open the link in a new tab
     window.open(ticketLink, '_blank');
